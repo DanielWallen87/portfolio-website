@@ -2443,3 +2443,23 @@ input, select, textarea {
 					}
 
 	}
+
+	/* Personalized Styles */
+
+	header h1 {
+		font-size: 4.5rem;
+		line-height: 1;
+	}
+
+	@media screen and (max-width: 1000px) {
+
+		#personalize1 h1 {
+			margin-top: 60px;
+		}
+	}	
+
+	@media screen and (max-width: 400px) {
+		strong #dw {
+			font-weight: 100;
+		}
+	}
