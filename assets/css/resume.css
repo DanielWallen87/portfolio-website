@@ -1,0 +1,357 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+.flex-styles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.mobile-styles {
+  font-size: 2rem;
+  font-weight: bold;
+}
+html,
+body {
+  font-size: 62.5%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: #43B3E0;
+  opacity: 1;
+  transition: 0.6s;
+}
+a:hover {
+  opacity: 0.5;
+}
+#top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+#top h1 {
+  font-size: 3rem;
+  margin-left: 40px;
+  font-family: 'Quicksand', sans-serif;
+}
+#top h2 {
+  font-size: 1.5rem;
+  margin-left: 40px;
+  font-family: 'Quicksand', sans-serif;
+}
+#top nav {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+#top nav a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: #43B3E0;
+  transition: 0.6s;
+  opacity: 1;
+  scroll-behavior: smooth;
+}
+#top nav a:hover {
+  opacity: 0.5;
+}
+h3 {
+  font-size: 2rem;
+  font-family: 'Quicksand', sans-serif;
+  margin: 20px auto;
+  text-align: center;
+}
+.border {
+  border-bottom: 0.5px dashed black;
+  width: fit-content;
+}
+#strengths p, #history p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1200px) {
+  #top {
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-width: 100%;
+  }
+  #top h1,
+  #top h2,
+  #top nav {
+    display: flex;
+    justify-content: center;
+  }
+  #top nav a {
+    margin: 0 auto;
+  }
+}
+#middle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+#middle #strengths {
+  width: 60%;
+  margin-top: 40px;
+  margin-right: 40px;
+  line-height: 1.5;
+}
+#middle #photo img {
+  border-radius: 100%;
+  height: 469px;
+  width: 352px;
+  margin: 40px 40px;
+}
+#middle h1 {
+  font-size: 3rem;
+  font-family: 'Quicksand', sans-serif;
+}
+#middle h2 {
+  font-size: 2rem;
+  font-family: 'Quicksand', sans-serif;
+  margin: 20px 0;
+}
+#middle p {
+  font-size: 1.5rem;
+  font-family: 'Quicksand', sans-serif;
+}
+@media screen and (max-width: 1200px) {
+  #middle {
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 100%;
+  }
+  #middle #skills {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 660px) {
+  #middle h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+#bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+#bottom h1 {
+  font-size: 3rem;
+  font-family: 'Quicksand', sans-serif;
+}
+#bottom h2 {
+  font-size: 2rem;
+  font-family: 'Quicksand', sans-serif;
+  margin: 20px 0;
+}
+#bottom p {
+  font-size: 1.5rem;
+  font-family: 'Quicksand', sans-serif;
+}
+#bottom #history {
+  width: 60%;
+  margin-right: 40px;
+  line-height: 1.5;
+}
+#bottom #featured {
+  margin-left: 100px;
+}
+#bottom #featured img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px auto;
+  border-radius: 100%;
+}
+@media screen and (max-width: 1200px) {
+  #bottom {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    min-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  #bottom #history {
+    margin: 0 auto;
+  }
+  #bottom #featured {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 660px) {
+  #bottom h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+#button {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: 'Quicksand', sans-serif;
+  background: #43B3E0;
+  text-align: center;
+  color: white;
+  border: 1px solid black;
+  width: 50vw;
+  line-height: 2;
+  transition: 0.6s;
+  opacity: 1;
+}
+#button:hover {
+  opacity: 0.5;
+}
+#button a {
+  text-decoration: none;
+  color: white;
+  padding: 20px 0;
+}
+#top-header {
+  margin-top: 20px;
+}
+@media screen and (max-width: 450px) {
+  #button {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  #button {
+    width: 75vw;
+  }
+}
