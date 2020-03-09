@@ -2462,4 +2462,11 @@ input, select, textarea {
 		strong #dw {
 			font-weight: 100;
 		}
+		.nav li {
+			margin-left: 20px;
+		}
+	}
+
+	#published {
+		margin-top: 60px;
 	}
