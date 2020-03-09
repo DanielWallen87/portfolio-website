@@ -209,7 +209,10 @@ h3 {
     min-width: 100%;
   }
   #top h1,
-  #top h2,
+  #top h2 {
+    text-align: center;
+    margin-left: 0;
+  }
   #top nav {
     display: flex;
     justify-content: center;
@@ -257,6 +260,24 @@ h3 {
   }
   #middle #skills {
     margin: 0 auto;
+  }
+  #middle #photo img {
+    width: 250px;
+    height: 333px;
+  }
+}
+@media screen and (max-width: 950px) {
+  #middle #photo img {
+    width: 200px;
+    height: 266px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #middle #photo #img {
+    margin: 20px auto;
+  }
+  #middle #strengths {
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 660px) {
@@ -354,5 +375,11 @@ h3 {
 @media screen and (max-width: 700px) {
   #button {
     width: 75vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h3 {
+    font-size: 1.75rem;
   }
 }
