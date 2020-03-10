@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "deploy-dev": "now",
+        "deploy-prod": "now --prod"
+    },
+    "dependencies": {
+        "now": "^17.0.4"
+    }
+}
