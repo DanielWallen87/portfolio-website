@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Code Challenges Suck</title>
+  <meta name="description" content="Code challenges suck. But employers love them. Let's solve stupid problems together." />
+  <meta name="keywords" content="code, code challenges, code challenges suck" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://danielwallen.dev">
+  <meta name="twitter:title" content="Code Challenges Suck">
+  <meta name="twitter:description" content="Code challenges suck. But employers love them. Let's solve stupid problems together.">
+  <meta name="twitter:image" content="https://danielwallen.dev/images/code-challenges-suck.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="What Internet Architects Actually Do - A Short and Sweet FAQ">
+  <meta property="og:description" content="Code challenges suck. But employers love them. Let's solve stupid problems together.">
+  <meta property="og:image" content="https://danielwallen.dev/images/code-challenges-suck.jpg">
+  <meta property="og:url" content="https://danielwallen.dev/code/code-challenges-suck.html">
+  <link rel="stylesheet" href="../assets/css/code-challenges.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155279765-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-155279765-1');
+  </script>
+</head>
+
+<body>
+    <div class="story">
+        <h1>Code challenges suck.</h1>
+        <h2>Let's solve stupid problems together.</h2>
+        <p>
+            <a href="https://edabit.com/challenges" target="_blank">Code challenges</a> don't mimic any app or website you'd ever build.<br><br>
+            No <a href="https://www.freecodecamp.org/news/the-10-most-popular-coding-challenge-websites-of-2016-fb8a5672d22f/" target="_blank">code challenge website</a> supplys any useful guidance or context.<br><br>
+            You'll never need a <a href="https://en.wikipedia.org/wiki/Linked_list" target="_blank">linked list</a> or <a href="https://en.wikipedia.org/wiki/Binary_search_tree" target="_blank">binary search tree</a> in the real world.<br><br>
+            The result? Hundreds of hours lost. And you gain nothing for the time invested.<br><br>
+            It's insane for employers to expect you to jump through this hurdle for an entry level job.<br><br>
+            And yet this is the world web developers live in. Thus, I'm going to do one code challenge per day and post the result here.<br><br>
+            Perhaps I'll troll my way to a software engineering job in the process (unless I get enough web design clients to not give a heck first).<br><br>
+            Edit: I changed my approach a little. Instead of one code challenge per day, I'm doing many different solutions for the same problem.<br><br>
+            I've finally exhaused possibilities for the first one and will move onto another code challenge next week (Monday to be precise).<br><br>
+            
+            <strong>Code Challenge 1: <a href="https://coderbyte.com/information/Find%20Intersection?fromStart" target="_blank">Find Intersection</a></strong><br><br>
+            <img src="../assets/css/code-challenge/code-challenges-1.png" alt="Just another dumb code challenge problem description"/><br><br>
+            Why would you ever receive a function input like this?<br><br>
+            There's no telling. Illogical inputs tend to be the norm in code challenges.<br><br>
+            But those commas and spaces are gonna cause problems, so we should probably remove them first.<br><br>
+            Thankfully there is a <a href="https://developer.mozilla.org/en-US/docs/web/javascript/reference/global_objects/string/split" target="_blank">split method in JavaScript</a>, which serves the purpose. It splits a string into a subarray (or something).<br><br>
+            I don't know what the hell that actually means. But it makes the commas and spaces go away, which is precisely what we need.<br><br>
+            Since the goal is to compare two numbers -- and ONLY two numbers -- we can use <a href="https://medium.com/@albertkoz/why-does-array-start-with-index-0-65ffc07cbce8" target="_blank">zero indexing</a> to split the string into two parts.<br><br>
+            We'll also need a placeholder array. The goal is to loop through each number (that's in <a href="https://www.w3schools.com/js/js_strings.asp" target="_blank">string format</a> for some strange and unknown reason).<br><br>
+            Given there are two numbers (that aren't a number) to compare, we'll use a nested for loop. In other words, a <a href="https://en.wikipedia.org/wiki/For_loop" target="_blank">for loop</a> within a for loop.<br><br>
+            Don't forget your square brackets, as you need those to access the index of each element. Let's just assign them to a variable.<br><br>
+            We'll name them "first" and "second" since that's logical. If they match, we'll <a href="https://www.tutorialspoint.com/javascript/array_push.htm" target="_blank">push</a> them to the "matches" placeholder array.<br><br> 
+            But the writer of this problem doesn't want us to return an <a href="https://www.javascript.com/learn/arrays" target="_blank">array</a>. They want a string of numbers (again). Use <a href="https://www.geeksforgeeks.org/javascript-array-join-method/">join</a> for that.<br><br>
+            Lastly, let's not forget the scenario where there are no matches. We'll add a <a href="https://www.guru99.com/how-to-use-conditional-statements-in-javascript.html" target="_blank">conditional</a> to check the array's length.<br><br>
+            If the array's empty, there are no matches. Return false. Otherwise, there are matches. Return the joined value.<br><br>
+            Computer science wizards hate this solution, because its <a href="https://www.happycoders.eu/algorithms/big-o-notation-time-complexity/" target="_blank">time complexity</a> is O(n)^2 (read: slow). Oh, well.<br><br>
+            <img src="../assets/css/code-challenge/code-challenges-1-solution.png" alt="Code challenge solution with array methods and stuff"/> <br><br>
+            Snark aside, we can solve this problem with one for loop to make the time complexity better: O(N)-ish. The <a href="https://www.w3schools.com/jsref/jsref_indexof.asp" target="_blank">indexOf</a> method helps.<br><br>
+            Instead of looping through both arrays, we loop through one. If the index equals -1, that means the element doesn't exist (skip it).<br><br>
+            Otherwise, the element exists in both arrays -- read: it classifies as an "intersection" -- and thus, it should be pushed to the array.<br><br>
+            I've also simplified the if/else statement with a <a href="https://devconquer.com/javascript/ternary-operator-in-javascript" target="_blank">ternary operator</a>. This isn't a great practice for complex code. But it works for simple stuff.<br><br>
+            <img src="../assets/css/code-challenge/code-challenges-1-solution-b.png" alt="Cleaner and faster code challenge solution with one for loop" /><br><br>
+            Lastly, here's an even cleaner solution. Array methods like <a href="https://www.w3schools.com/jsref/jsref_find.asp" target="_blank">find</a> and <a href="https://www.w3schools.com/jsref/jsref_filter.asp" target="_blank">filter</a> eliminate the need for a loop.<br><br>
+            Connecting the two together makes sense here. This code "filters" through the first array and "finds" matches in the second array.<br><br>
+            And then we assign the matches to a variable, which is returned as usual (assuming the array length isn't zero, which should get a "false" flag).<br><br>
+            <img src="../assets/css/code-challenge/code-challenges-1-solution-c.png" alt="Even cleaner and faster code challenge solution with array methods" /><br><br>
+            Oops, I lied. Here's a bonus solution. It applies a computer science concept, which makes me feel proud (CS isn't my strong-suit).<br><br>
+            For now, let's just assume a <a href="https://www.educative.io/blog/data-strucutres-hash-table-javascript" target="_blank">hash table</a> operates in the same manner as an <a href="https://www.w3schools.com/js/js_objects.asp" target="_blank">object</a>. For this problem, that's all you need to know.<br><br>
+            As usual, we split the lists in two and assign them to separate variables. This is the easiest way to find the intersection.<br><br>
+            Next, we create an empty object named "hashed" and a placeholder array which we'll use to store the matches.<br><br>
+            We utilize the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">forEach</a> method to iterate through both of our lists.<br><br>
+            First, we fill the hash table with array number one's values.<br><br> 
+            Second, we compare those values with the second array.<br><br> 
+            If there's a match, we push it to the result array.<br><br>
+            Why's all the extra code worth it? Great question.<br><br>
+            Time complexity is O(1) (as good as it gets).<br><br>
+            Use this solution in a code interview.<br><br>
+            They'll think you're a genius.<br><br>
+            <img src="../assets/css/code-challenge/code-challenges-1-solution-d.png" alt="O(1) code challenge solution that utilizes a hashtable" /><br><br>
+        </p>
+</div>

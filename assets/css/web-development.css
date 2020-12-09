@@ -176,7 +176,7 @@ h2 {
   }
   #top nav {
     font-family: 'Quicksand', sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     justify-content: space-evenly;
     margin-top: 30px;
     margin-right: 10px;
@@ -337,7 +337,7 @@ p.footer {
     float: none !important;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     #top {
       flex-wrap: wrap;
       flex-direction: column;
@@ -394,4 +394,10 @@ p.footer {
         margin-top: 30px;
         margin-bottom: 30px;
     }
+}
+
+@media screen and (max-width: 500px) {
+  #nav-menu nav {
+    flex-direction: column;
+  }
 }

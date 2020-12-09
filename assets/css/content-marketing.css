@@ -172,7 +172,7 @@ a {
   }
   #top nav {
     font-family: 'Quicksand', sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     justify-content: space-evenly;
     margin-top: 30px;
     margin-right: 10px;
@@ -256,7 +256,7 @@ hr {
     display: flex;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     #top {
       flex-wrap: wrap;
       flex-direction: column;
@@ -297,6 +297,12 @@ hr {
         display: block;
         margin: 20px auto;
     }
+}
+
+@media screen and (max-width: 550px) {
+  #nav-menu nav {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 400px) {

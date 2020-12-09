@@ -4,6 +4,6 @@
         "deploy-prod": "now --prod"
     },
     "dependencies": {
-        "now": "^17.0.4"
+        "now": "^19.2.0"
     }
 }
