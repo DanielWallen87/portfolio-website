@@ -217,6 +217,16 @@ iframe {
     max-width: 100%;
 }
 
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 505px) {
+    .mobile {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 983px) {
     .story h1 {
         font-size: 2rem;
