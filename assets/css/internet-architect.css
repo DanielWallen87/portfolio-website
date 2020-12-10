@@ -211,6 +211,12 @@ h2 a {
     padding-left: 10px;
 }
 
+iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
 @media screen and (max-width: 983px) {
     .story h1 {
         font-size: 2rem;
