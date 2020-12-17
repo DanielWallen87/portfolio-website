@@ -221,6 +221,54 @@ iframe {
     display: none;
 }
 
+.calendly-inline-widget {
+    width: auto;
+    height: 630px;
+}
+
+.faq-button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.active, .faq-button:hover {
+    background-color: #ccc;
+}
+
+.faq {
+    margin-top: 20px;
+}
+
+.faq-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    margin-bottom: 20px;
+    width: 90vw;
+}
+
+.faq-button:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
 @media screen and (max-width: 505px) {
     .mobile {
         display: block;
