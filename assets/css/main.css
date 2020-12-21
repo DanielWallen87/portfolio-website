@@ -1084,3 +1084,9 @@ body {
 			margin-top: 0;
 		}
 	}
+	
+	@media screen and (max-width: 506px) {
+		.amazon {
+			display: none;
+		}
+	}
