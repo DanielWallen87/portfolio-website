@@ -170,6 +170,7 @@ p {
 img {
     display: block;
     margin-top: 20px;
+    max-width: 100%;
 }
 
 .top-img {
@@ -179,4 +180,14 @@ img {
 
 .center {
     text-align: center;
+}
+
+.mobile-alert {
+    display: none;
+}
+
+@media screen and (max-width: 505px) {
+    .mobile-alert {
+        display: block;
+    }
 }
