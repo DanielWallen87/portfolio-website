@@ -1063,6 +1063,10 @@ body {
 		margin-top: 60px;
 	}
 
+	#copyright li {
+		line-height: 1.5;
+	}
+
 	#nav .container #desktop p, #nav .container #mobile p {
 		color: white;
 	}
