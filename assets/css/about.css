@@ -144,6 +144,7 @@ body {
     height: 100%;
     max-width: 100%;
     background: white;
+    line-height: 1.5;
 }
 
 a {
@@ -165,7 +166,6 @@ h2 {
 p {
     margin-top: 20px;
     font-size: 1.5em;
-    line-height: 1.5;
 }
 
 img {
