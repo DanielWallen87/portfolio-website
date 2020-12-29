@@ -1071,13 +1071,13 @@ body {
 		color: white;
 	}
 
-	@media screen and (max-width: 564px) {
+	@media screen and (max-width: 586px) {
 		#nav .container #desktop {
 			display: none;
 		}
 	}
 
-	@media screen and (min-width: 565px) {
+	@media screen and (min-width: 586px) {
 		#nav .container #mobile {
 			display: none;
 		}
