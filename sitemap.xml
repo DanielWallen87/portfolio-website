@@ -4,27 +4,40 @@
 
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
-
 <url>
-
-<loc>https://danielwallen.dev/</loc>
-
-<lastmod>2020-12-15T22:38:44+00:00</lastmod>
-
-<priority>1.00</priority>
-
+    <loc>https://www.danielwallen.dev/</loc>
+    <lastmod>2020-12-29T00:54:12+00:00</lastmod>
+    <priority>1.00</priority>
 </url>
 
+<url>
+    <loc>https://www.danielwallen.dev/about.html</loc>
+    <lastmod>2020-12-29T00:54:12+00:00</lastmod>
+    <priority>0.80</priority>
+</url>
 
 <url>
+    <loc>https://www.danielwallen.dev/websites.html</loc>
+    <lastmod>2020-12-29T00:54:12+00:00</lastmod>
+    <priority>0.80</priority>
+</url>
 
-<loc>https://danielwallen.dev/websites.html</loc>
+<url>
+    <loc>https://www.danielwallen.dev/therapist-websites.html</loc>
+    <lastmod>2020-12-29T00:54:12+00:00</lastmod>
+    <priority>0.80</priority>
+</url>
 
-<lastmod>2020-12-15T22:38:44+00:00</lastmod>
+<url>
+    <loc>https://www.danielwallen.dev/personal-trainer-websites.html</loc>
+    <lastmod>2020-12-29T00:54:12+00:00</lastmod>
+    <priority>0.80</priority>
+</url>
 
-<priority>0.80</priority>
-
+<url>
+    <loc>https://www.danielwallen.dev/pet-care-websites.html</loc>
+    <lastmod>2020-12-29T00:54:12+00:00</lastmod>
+    <priority>0.80</priority>
 </url>
 
 </urlset>
