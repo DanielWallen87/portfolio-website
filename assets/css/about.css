@@ -227,9 +227,17 @@ img {
     top: 1px;
   }
 
+  hr {
+    display: none;
+    margin: 20px 0;
+  }
+
 @media screen and (max-width: 505px) {
     .mobile-alert {
         display: block;
+    }
+    hr {
+      display: block;
     }
 }
 
