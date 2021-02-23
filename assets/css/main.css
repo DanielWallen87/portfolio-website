@@ -1071,6 +1071,12 @@ body {
 		color: white;
 	}
 
+	.copy {
+		background: white;
+		width: 100vw;
+		margin-left: 0;
+	}
+
 	@media screen and (max-width: 586px) {
 		#nav .container #desktop {
 			display: none;
