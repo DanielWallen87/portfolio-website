@@ -232,6 +232,22 @@ img {
     margin: 20px 0;
   }
 
+  .think {
+    margin: 0 100px;
+  }
+
+  .think p {
+    font-size: 1.25rem;
+  }
+
+  .think h2 {
+    font-size: 1.5rem;
+  }
+
+  .think h1 {
+    font-size: 1.75rem;
+  }
+
 @media screen and (max-width: 505px) {
     .mobile-alert {
         display: block;
@@ -271,5 +287,31 @@ img {
 @media screen and (max-width: 366px) {
   .button {
     font-size: 1.5em;
+  }
+}
+
+/* How I Think Mobile Responses */
+
+@media screen and (max-width: 800px) {
+  .think {
+    margin: 0 75px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .think {
+    margin: 0 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .think {
+    margin: 0 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .think {
+    margin: 0 10px;
   }
 }
