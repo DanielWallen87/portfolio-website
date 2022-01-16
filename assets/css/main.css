@@ -1076,7 +1076,9 @@ body {
 		width: 100vw;
 		margin-left: 0;
 	}
-/* Beep, boop again */
+/* Beep, boop again
+Also note to self: do we need to style for the Galazy Fold now? Investigate that at some point because the current CSS doesn't account for that device (280 x 653 pixels)." 
+*/
 	@media screen and (max-width: 593px) {
 		#nav .container #desktop {
 			display: none;
